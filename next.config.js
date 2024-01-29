@@ -10,14 +10,19 @@ if (process.env.NODE_ENV === 'development') {
   import('@cloudflare/next-on-pages/next-dev').then(({ setupDevBindings }) => {
       setupDevBindings({
           bindings: {
-              // Add here the Cloudflare Bindings you want to have available during local development,
-              // for more details on Bindings see: https://developers.cloudflare.com/pages/functions/bindings/)
-              //
-              // KV Example:
-              // MY_KV: {
-              //   type: 'kv',
-              //   id: 'xxx',
-              // }
+                
+                next_kv: {
+                    type: "kv",
+                    id: "a2779a5f97cc441a8c3a4d3eb70dc49a"
+                },
+                domains_structure_01: {
+                    type: "kv",
+                    id: "fb147242d55e497e8c810391b9373443"
+                },
+                test_kv: {
+                    type: "kv",
+                    id: "3aa9b9b123734d1eb64b06dfe1960efb"
+                }
           }
       })
   })
