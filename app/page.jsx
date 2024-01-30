@@ -9,7 +9,7 @@ export default function Home() {
   const [value, setValue] = useState('')
   async function HandleClickAdd() {
     try {
-      await process.env.domains_structure_01.put(key, value)
+      await process.env.domains_structure_KV.put(key, value)
       console.log('success!')
       setKey('')
       setValue('')

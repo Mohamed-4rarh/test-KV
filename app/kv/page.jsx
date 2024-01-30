@@ -7,7 +7,7 @@ export default function Show() {
   const [value, setValue] = useState('')
   async function HandleClickAdd() {
     try {
-      const keyValue = await process.env.domains_structure_01.get(key)
+      const keyValue = await process.env.domains_structure_KV.get(key)
     //   const keyValue = "from kv"
       console.log('success!')
       setValue(keyValue)
