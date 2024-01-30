@@ -1,0 +1,8 @@
+name = "netx-cloudflare"
+compatibility_date = "2024-01-29"
+account_id = "9952c920fa6dd8e3b48accd4a97923b1"
+
+[env.production]
+kv_namespaces = [
+    { binding = "domains_structure_01", id = "fb147242d55e497e8c810391b9373443" }
+]
