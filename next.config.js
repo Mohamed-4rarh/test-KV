@@ -28,15 +28,15 @@ if (process.env.NODE_ENV === 'development') {
   })
 }
 
-if (process.env.NODE_ENV === 'production') {
-    import('@cloudflare/next-on-pages/next-dev').then(({ setupProductionBindings }) => {
-        setupProductionBindings({
-            bindings: {
-                omains_structure_01: {
-                    type: "kv",
-                    id: "fb147242d55e497e8c810391b9373443"
-                },
-            }
-        })
-    })
-}
+// if (process.env.NODE_ENV === 'production') {
+//     import('@cloudflare/next-on-pages/next-dev').then(({ setupProductionBindings }) => {
+//         setupProductionBindings({
+//             bindings: {
+//                 omains_structure_01: {
+//                     type: "kv",
+//                     id: "fb147242d55e497e8c810391b9373443"
+//                 },
+//             }
+//         })
+//     })
+// }
