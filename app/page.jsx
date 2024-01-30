@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
+export const runtime = 'edge'
 export default function Home() {
   const [key, setKey] = useState('')
   const [value, setValue] = useState('')

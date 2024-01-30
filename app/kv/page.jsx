@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
+export const runtime = 'edge'
 export default function Show() {
     const [key, setKey] = useState('')
   const [value, setValue] = useState('')
